@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Bliss Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bee Bliss Shop</h1>
+        <p>Your one-stop shop for natural products and relaxation</p>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="bee-wax-candle.jpg" alt="Bee Wax Candle">
+                <h2>Bee Wax Candle</h2>
+                <p>Price: $10</p>
+                <button onclick="addToCart('Bee Wax Candle', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="hazelnut-butter.jpg" alt="Hazelnut Butter">
+                <h2>Hazelnut Butter</h2>
+                <p>Price: $15</p>
+                <button onclick="addToCart('Hazelnut Butter', 15)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="pistachio-butter.jpg" alt="Pistachio Butter">
+                <h2>Pistachio Butter</h2>
+                <p>Price: $20</p>
+                <button onclick="addToCart('Pistachio Butter', 20)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="massage.jpg" alt="Massage Session">
+                <h2>Massage Session</h2>
+                <p>Price: $50</p>
+                <button onclick="addToCart('Massage Session', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="honey.jpg" alt="Honey">
+                <h2>Honey</h2>
+                <p>Price: $12</p>
+                <button onclick="addToCart('Honey', 12)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bee Bliss Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
