@@ -14,7 +14,7 @@ function updateCart() {
     cartItems.innerHTML = "";
     cart.forEach(item => {
         const li = document.createElement("li");
-        li.textContent = `${item.productName} - $${item.price}`;
+        li.textContent = `${item.productName} - ${item.price} lei`;
         cartItems.appendChild(li);
     });
 
